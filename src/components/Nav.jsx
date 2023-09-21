@@ -1,12 +1,12 @@
-import { useState } from "react"; // import state
+import { useState } from "react";
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8 px-6 bg-slate-400 m-2">
+    <div className="flex items-center justify-between border-b border-gray-400 py-8 px-6 bg-slate-800 m-2">
       <a href="/">
-        <img src="./PixelChris.jpg" className="w-14" alt="logo" />
+        <img src="./PixelChris.png" className="w-14" alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -14,14 +14,13 @@ export default function Nav() {
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-red-400"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-orange-300"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             {" "}
-            // toggle class based on isNavOpen state
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
