@@ -6,7 +6,7 @@ export default function Trial() {
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8">
       <a href="/">
-        <img src="./PixelChris.jpg" className="w-9" alt="logo" />
+        <img src="./PixelChris.jpg" className="w-12" alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
