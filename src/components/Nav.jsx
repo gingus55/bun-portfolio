@@ -4,7 +4,7 @@ export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8 px-6 bg-slate-800 m-2">
+    <div className="flex fixed w-full items-center justify-between border-b border-gray-400 py-8 px-6 bg-slate-800 mx-2">
       <a href="/">
         <img src="./PixelChris.png" className="w-14" alt="logo" />
       </a>
