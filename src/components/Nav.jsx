@@ -53,13 +53,13 @@ export default function Nav() {
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <li>
+          <li className="text-red-400">
             <a href="/about">About</a>
           </li>
-          <li>
+          <li className="text-orange-300">
             <a href="/portfolio">Portfolio</a>
           </li>
-          <li>
+          <li className="text-white">
             <a href="/contact">Contact</a>
           </li>
         </ul>
