@@ -1,6 +1,6 @@
 export default function Splash() {
   return (
-    <div className="bg-slate-400 mx-2 h-96 flex">
+    <div className="bg-slate-400 mx-2 mt-20 h-96 flex">
       <div className="bg-red-400 h-96 w-1/3 flex overflow-hidden justify-center px-2 items-center">
         <img src="/icarus.jpg" />
       </div>
