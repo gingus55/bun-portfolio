@@ -7,7 +7,7 @@ import Splash from "./components/Splash";
 function App() {
   return (
     <>
-      <div>
+      <div className="flex-col ">
         <Nav />
         <Splash />
         <Projects />
