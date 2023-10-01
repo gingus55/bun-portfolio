@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -12,6 +13,7 @@ function App() {
         <Splash />
         <Projects />
         <Skills />
+        <Footer />
       </div>
     </>
   );
