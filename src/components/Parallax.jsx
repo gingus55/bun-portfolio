@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-export default function Splash() {
+function ParallaxScrolling() {
   const backgroundRef = useRef(null);
 
   useEffect(() => {
@@ -23,27 +23,21 @@ export default function Splash() {
 
   return (
     <div className="relative h-screen">
-      <div className="bg-slate-300 mx-2 mt-32 h-96 z-10 flex">
-        <div className=" h-96 w-1/3 flex overflow-hidden justify-center px-2 items-center">
-          <img className="rounded-full" src="/icarus.jpg" />
-        </div>
-        <div className=" h-96 w-2/3 flex text-center items-center px-8">
-          <p className="font-bold">
-            Maths teacher turned Full Stack Developer with The University of
-            Birmingham. Always had a passion for coding since writing boot-disks
-            for games on my 486!
-          </p>
-        </div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-5xl font-bold text-black">
+          Welcome to Parallax Scrolling
+        </h1>
       </div>
       <div className="absolute inset-0">
-        {/* <img
+        <img
           ref={backgroundRef}
           src="wave-haikei.svg"
           alt="Background"
           className="object-cover w-full h-full"
-          style={{ zIndex: -1 }}
-        /> */}
+        />
       </div>
     </div>
   );
 }
+
+export default ParallaxScrolling;
